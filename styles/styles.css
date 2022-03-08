@@ -16,6 +16,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   position: relative;
 }
 
@@ -62,10 +65,12 @@ nav ul li:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .active .img-slide {
-  width: 56%;
+  width: 55%;
 }
 
 .active article {
@@ -76,7 +81,7 @@ nav ul li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 44%;
+  width: 45%;
 }
 
 .active article .text {
@@ -107,7 +112,7 @@ nav ul li:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 50%;
-  width: 75%;
+  width: 70%;
   gap: 3rem;
 }
 
@@ -129,7 +134,7 @@ nav ul li:hover {
 }
 
 .active article .text .inner-text span:hover {
-  opacity: 0.8;
+  color: rgba(0, 0, 0, 0.445);
 }
 
 .active article .buttons {
@@ -150,10 +155,11 @@ nav ul li:hover {
   width: clamp(4rem, 7vw, 10rem);
   background-color: #333131;
   cursor: pointer;
+  outline: none;
 }
 
 .active article .buttons button:hover {
-  opacity: 0.8;
+  background-color: rgba(49, 49, 49, 0.829);
 }
 
 .bottom {
@@ -168,7 +174,7 @@ nav ul li:hover {
 }
 
 .bottom img {
-  width: 33%;
+  width: 25%;
 }
 
 .bottom article {
@@ -179,7 +185,7 @@ nav ul li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 34%;
+  width: 50%;
 }
 
 .bottom article .text {

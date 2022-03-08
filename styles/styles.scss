@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   position: relative;
 }
 
@@ -50,15 +51,16 @@ nav {
 
 .active {
   display: flex;
+  flex-wrap: wrap;
 
   .img-slide {
-    width: 56%;
+    width: 55%;
   }
 
   article {
     display: flex;
     flex-direction: column;
-    width: 44%;
+    width: 45%;
     
     .text {
       display: flex;
@@ -71,7 +73,7 @@ nav {
         display: flex;
         flex-direction: column;
         height: 50%;
-        width: 75%;
+        width: 70%;
         gap: 3rem;
 
         h2 {
@@ -91,7 +93,7 @@ nav {
           cursor: pointer;
   
           &:hover {
-            opacity: 0.8;
+            color: rgba(0, 0, 0, 0.445);
           }
         }  
       }
@@ -108,9 +110,10 @@ nav {
         width: clamp(4rem, 7vw, 10rem);
         background-color: rgb(51, 49, 49);
         cursor: pointer;
+        outline: none;
         
         &:hover {
-          opacity: 0.8;
+          background-color: rgba(49, 49, 49, 0.829);
         }
       }
     }
@@ -123,13 +126,13 @@ nav {
   flex-wrap: wrap;
 
   img {
-    width: 33%;
+    width: 25%;
   }
 
   article {
     display: flex;
     flex-direction: column;
-    width: 34%;
+    width: 50%;
 
     .text {
       display: flex;
