@@ -1,0 +1,160 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  margin: 5rem;
+  display: flex;
+  gap: 5rem;
+  
+  svg {
+    color: white;
+    font-size: clamp(1rem, 1vw, 2rem);
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+
+    li {
+      color: white;
+      font-size: clamp(1rem, 1vw, 2rem);
+      cursor: pointer;
+      text-transform: lowercase;
+      border-bottom: 3px solid transparent;
+
+      &:hover {
+        border-bottom: solid 3px white;
+      }
+    }
+  }
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: flex;
+
+  .img-slide {
+    width: 56%;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+    
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 3;
+      
+      .inner-text {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 75%;
+        gap: 3rem;
+
+        h2 {
+          font-size: clamp(2rem, 2.2vw, 5rem);
+        }
+    
+        p {
+          opacity: 0.6;
+          font-size: clamp(1rem, 0.8vw, 2rem);
+          line-height: 1.5;
+        }
+        
+        span {
+          letter-spacing: 1.2rem;
+          text-transform: uppercase;
+          font-size: clamp(1rem, 1vw, 2rem);
+          cursor: pointer;
+  
+          &:hover {
+            opacity: 0.8;
+          }
+        }  
+      }
+    }
+
+    .buttons {
+      flex-grow: 1;
+      display: flex;
+      align-items: flex-end;
+      
+      button {    
+        border: none;
+        height: clamp(4rem, 7vw, 10rem);
+        width: clamp(4rem, 7vw, 10rem);
+        background-color: rgb(51, 49, 49);
+        cursor: pointer;
+        
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+
+  img {
+    width: 33%;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 3;
+      
+      .inner-text {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 75%;
+        gap: 3rem;
+
+        h2 {
+          font-size: clamp(2rem, 2.2vw, 5rem);
+        }
+    
+        p {
+          opacity: 0.6;
+          font-size: clamp(1rem, 0.8vw, 2rem);
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

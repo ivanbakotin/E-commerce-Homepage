@@ -1,0 +1,226 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  margin: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+}
+
+nav svg {
+  color: white;
+  font-size: clamp(1rem, 1vw, 2rem);
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+nav ul li {
+  color: white;
+  font-size: clamp(1rem, 1vw, 2rem);
+  cursor: pointer;
+  text-transform: lowercase;
+  border-bottom: 3px solid transparent;
+}
+
+nav ul li:hover {
+  border-bottom: solid 3px white;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.active .img-slide {
+  width: 56%;
+}
+
+.active article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 44%;
+}
+
+.active article .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.active article .text .inner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50%;
+  width: 75%;
+  gap: 3rem;
+}
+
+.active article .text .inner-text h2 {
+  font-size: clamp(2rem, 2.2vw, 5rem);
+}
+
+.active article .text .inner-text p {
+  opacity: 0.6;
+  font-size: clamp(1rem, 0.8vw, 2rem);
+  line-height: 1.5;
+}
+
+.active article .text .inner-text span {
+  letter-spacing: 1.2rem;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 1vw, 2rem);
+  cursor: pointer;
+}
+
+.active article .text .inner-text span:hover {
+  opacity: 0.8;
+}
+
+.active article .buttons {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.active article .buttons button {
+  border: none;
+  height: clamp(4rem, 7vw, 10rem);
+  width: clamp(4rem, 7vw, 10rem);
+  background-color: #333131;
+  cursor: pointer;
+}
+
+.active article .buttons button:hover {
+  opacity: 0.8;
+}
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bottom img {
+  width: 33%;
+}
+
+.bottom article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 34%;
+}
+
+.bottom article .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.bottom article .text .inner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50%;
+  width: 75%;
+  gap: 3rem;
+}
+
+.bottom article .text .inner-text h2 {
+  font-size: clamp(2rem, 2.2vw, 5rem);
+}
+
+.bottom article .text .inner-text p {
+  opacity: 0.6;
+  font-size: clamp(1rem, 0.8vw, 2rem);
+  line-height: 1.5;
+}
+/*# sourceMappingURL=styles.css.map */
