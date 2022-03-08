@@ -12,6 +12,6 @@ for (let i = 0; i < 3; i++) {
 
   next[i].addEventListener("click", () => {
     slides[i].classList.toggle("active")
-    slides[i ? 0 : i + 1].classList.toggle("active")
+    slides[i > 1 ? 0 : i + 1].classList.toggle("active")
   })
 }

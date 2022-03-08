@@ -59,21 +59,17 @@ nav ul li:hover {
 
 .slide {
   display: none;
-}
-
-.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.active .img-slide {
-  width: 55%;
+.slide .img-slide {
+  height: 70vh;
+  min-width: 60%;
+  max-width: 60%;
 }
 
-.active article {
+.slide article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,10 +77,11 @@ nav ul li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 45%;
+  min-width: 40%;
+  max-width: 40%;
 }
 
-.active article .text {
+.slide article .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,12 +95,12 @@ nav ul li:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-.active article .text .inner-text {
+.slide article .text .inner-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,36 +108,32 @@ nav ul li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 50%;
   width: 70%;
   gap: 3rem;
 }
 
-.active article .text .inner-text h2 {
+.slide article .text .inner-text h2 {
   font-size: clamp(2rem, 2.2vw, 5rem);
 }
 
-.active article .text .inner-text p {
+.slide article .text .inner-text p {
   opacity: 0.6;
   font-size: clamp(1rem, 0.8vw, 2rem);
   line-height: 1.5;
 }
 
-.active article .text .inner-text span {
+.slide article .text .inner-text span {
   letter-spacing: 1.2rem;
   text-transform: uppercase;
   font-size: clamp(1rem, 1vw, 2rem);
   cursor: pointer;
 }
 
-.active article .text .inner-text span:hover {
+.slide article .text .inner-text span:hover {
   color: rgba(0, 0, 0, 0.445);
 }
 
-.active article .buttons {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.slide article .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,7 +142,7 @@ nav ul li:hover {
           align-items: flex-end;
 }
 
-.active article .buttons button {
+.slide article .buttons button {
   border: none;
   height: clamp(4rem, 7vw, 10rem);
   width: clamp(4rem, 7vw, 10rem);
@@ -158,8 +151,14 @@ nav ul li:hover {
   outline: none;
 }
 
-.active article .buttons button:hover {
+.slide article .buttons button:hover {
   background-color: rgba(49, 49, 49, 0.829);
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .bottom {
@@ -169,12 +168,12 @@ nav ul li:hover {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  height: 30vh;
 }
 
 .bottom img {
-  width: 25%;
+  min-width: 30%;
+  max-width: 30%;
 }
 
 .bottom article {
@@ -185,7 +184,6 @@ nav ul li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
 }
 
 .bottom article .text {
